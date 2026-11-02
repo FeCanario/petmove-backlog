@@ -30,6 +30,42 @@ O tutor resolve o deslocamento ou o passeio do pet pelo celular, com um condutor
 2. Solicitação de **transporte** e de **passeio** pelo tutor
 3. Aceite e execução do serviço pelo condutor
 
+## Funcionalidades desejáveis (Should e Could)
+
+- **Should:** credenciamento do condutor com envio de documentos e aprovação pelo administrador
+- **Should:** histórico de serviços do tutor
+- **Could:** avaliação do condutor pelo tutor ao final do serviço
+
+## Critérios de aceite (histórias Must)
+
+**Cadastro e login do tutor com seus pets**
+- [ ] O tutor cria conta com e-mail e senha
+- [ ] O tutor cadastra ao menos um pet (nome, espécie e porte)
+- [ ] Login com dados incorretos exibe mensagem de erro
+
+**Solicitação de transporte e de passeio**
+- [ ] O tutor escolhe o pet, o tipo de serviço (transporte ou passeio), a data e o endereço
+- [ ] O valor do serviço é exibido antes da confirmação
+- [ ] Após confirmar, a solicitação aparece como pendente
+
+**Aceite e execução do serviço pelo condutor**
+- [ ] O condutor vê as solicitações pendentes e pode aceitar uma
+- [ ] O condutor marca o serviço como iniciado e como concluído
+- [ ] O tutor vê o status atualizado do serviço
+
+**Cenário: solicitação de transporte**
+- Dado que sou um tutor logado com um pet cadastrado
+- Quando solicito um transporte informando data e endereço
+- Então vejo a solicitação como pendente com o valor exibido
+
+## Estimativas (Planning Poker)
+
+| História Must | Pontos |
+|---|---|
+| Cadastro e login do tutor com seus pets | 5 |
+| Solicitação de transporte e de passeio | 5 |
+| Aceite e execução do serviço pelo condutor | 3 |
+
 ## Fora de escopo (Won't, neste semestre)
 
 - Pagamento real dentro do app (cartão, Pix) — o valor é só exibido
@@ -79,7 +115,7 @@ Como a equipe tem três pessoas, o Scrum Master também atua como Developer. Ele
 
 ## Backlog e quadro
 
-- Histórias: aba **Issues** (label `tipo:história`)
+- Histórias: aba **Issues** (label `tipo:história`), no formato "Como <papel>, quero <ação>, para <benefício>"
 - Prioridade: labels `prioridade:must`, `prioridade:should`, `prioridade:could`
 - Estimativa: labels `pontos:N` (Planning Poker, escala de Fibonacci modificada)
 - Quadro **Projects**: Backlog → Pronto para sprint → Em andamento → Em revisão → Concluído
