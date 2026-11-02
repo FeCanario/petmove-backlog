@@ -2,7 +2,7 @@
 
 Aplicativo de transporte e passeio de pets que conecta tutores a condutores credenciados.
 
-Engenharia de Software II • Senac • Prof. Rafael
+Engenharia de Software II • Senac • Prof. Rafael Santos Novo Pereira
 
 ## Elevator pitch
 
